@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pdf to Doc</title>
+    <style>
+          
+        body {
+            background-color: #000; /* Set the background color to black */
+            color: #fff; /* Set text color to white */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -200px; /* Shift the form upward by 200 pixels */
+        }
+        input[type="file"],
+        input[type="submit"] {
+            background-color: #3498db; /* Set button background color to blue */
+            color: #fff; /* Set button text color to white */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 4px; /* Adjust the margin-top of the buttons */
+        }
+        input[type="file"]:hover,
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+    </style>
+
+         
+        
+
+
+    
+        </head>
+        
+        
+       
+        
+    
+        
+    
+<body>
+    <center>
+        <h1>Upload PDF</h1>
+        <form action="/index" method="POST" enctype="multipart/form-data">
+            <input type="file" name="filename">
+            <input type="submit" value="Upload">
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+
+    
+    <meta charset="UTF-8">
+    <title>Docx</title>
+    <style>
+        body {
+            background-color: #000; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .btn-container {
+            text-align: center;
+        }
+        .btn {
+            background: linear-gradient(to right, #2980b9, #3498db); /* Gradient blue background for the button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background: linear-gradient(to right, #3498db, #2980b9); /* Gradient change on hover */
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-container">
+        <h1>Click Here to Download</h1>
+        <form action="/docx" method="POST">
+            <input value="{{variable}}" id="3" name="filename" type="hidden">
+            <button class="btn"><i class="fa fa-download"></i>Download</button>
+        </form>
+    </div>
+</body>
+</html>
